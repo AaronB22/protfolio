@@ -9,7 +9,7 @@ html {
 }
 
 main {
-    width: 1500px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--primary-color);
@@ -74,4 +74,25 @@ ul{
 li{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+@media screen and (width <750px){
+ main{
+    width: 100%;
+ }
+ .contact-list{
+    flex-direction: column;
+    width: 100%;
+ }
+}
+
+@media screen and (width <500px) {
+    .skills{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    li{
+        margin: 0;
+    }
 }

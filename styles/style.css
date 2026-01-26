@@ -1,40 +1,77 @@
 :root {
-    --primary-color: rgb(20, 0, 100);
-    --sec-color: rgb(220,210,220);
+    --primary-color: rgb(14, 150, 254);
+    --sec-color: rgb(30, 116, 11);
 }
 
-html{
-    font-size: 16px;
+html {
+    font-size: 24px;
     text-align: center;
 }
-main{
+
+main {
     width: 1500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--sec-color);
+    background-color: var(--primary-color);
 }
-a:hover{
+
+a:hover {
     font-weight: 800;
-    color:var(--sec-color);
+    color: var(--sec-color);
 }
-img{
+
+img {
     width: 200px;
     display: block;
     margin: 0 auto;
+    border-radius: 25px;
+    border: 5px solid var(--sec-color);
 }
-.header{
+
+h1 {
+    font-size: 45px;
+}
+
+.header {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.Contact-list{
+
+.contact-list {
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
+    max-width: 900px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-.Contact-list p {
-    margin: 20px;
+
+h2 {
+    border-bottom: 5px solid var(--sec-color);
+    ;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 38px;
+}
+
+.contact-list p {
+    margin: 30px;
+    font-size: 24px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

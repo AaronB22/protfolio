@@ -1,0 +1,40 @@
+:root {
+    --primary-color: rgb(20, 0, 100);
+    --sec-color: rgb(220,210,220);
+}
+
+html{
+    font-size: 16px;
+    text-align: center;
+}
+main{
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--sec-color);
+}
+a:hover{
+    font-weight: 800;
+    color:var(--sec-color);
+}
+img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Contact-list p {
+    margin: 20px;
+}

@@ -2,7 +2,7 @@
   "name": "port",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,9 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/AaronB22/protfolio/issues"
   },
-  "homepage": "https://github.com/AaronB22/protfolio#readme"
+  "homepage": "https://github.com/AaronB22/protfolio#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

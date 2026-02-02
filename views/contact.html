@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Aaron Bailey</title>
-      <link rel="icon" href="./imgs/icon.png">
-      <link rel="stylesheet" href="styles/contact.css">
-</head>
-<body>
-    <main>
-        <h1>Contact Me!</h1>
-        <form>
-            <div class="topForm">
-                <label for="fname">
-                   First Name
-                </label>
-                <label for="lname">
-                  Last Name
-                </label>
-                <label for="email">
-                  Email
-                </label>
-                <input name="fname" id="fname" type="text">
-                <input name="lname" id="lname" type="text">
-                <input name="email" id="email" type="text">
-                <label for="job">
-                  Job Title
-                </label>
-                <label for="comp">
-                  Company
-                </label>
-                <label for="link">
-                  LinkedIn
-                </label>
-                <input name="job" id="job" type="text">
-                <input name="comp" id="comp" type="text">
-                <input name="link" id="link" type="text">
 
-            </div>
-            <div class="mid-form">
-                <label for="meet"> How did we meet?</label>
-                <label for="other"> Other (please specify)</label>
-                <select id="meet" name="meet">
-                    <option value="none">-- Select Where We Meet--</option>
-                    <option value="none">Job Fair</option>
-                    <option value="none">Online Job Board</option>
-                    <option value="none">LinkedIn</option>
-                </select>
-                <input id ='other' name="'other" type="text">
-            </div>
-        </form>
-    </main>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Aaron Bailey</title>
+  <link rel="icon" href="./imgs/icon.png">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+  <main>
+    <h1>Contact Me!</h1>
+    <form>
+      <div class="topForm">
+        <label for="fname">
+          First Name
+        </label>
+        <label for="lname">
+          Last Name
+        </label>
+        <label for="email">
+          Email
+        </label>
+        <input name="fname" id="fname" type="text">
+        <input name="lname" id="lname" type="text">
+        <input name="email" id="email" type="text">
+        <label for="job">
+          Job Title
+        </label>
+        <label for="comp">
+          Company
+        </label>
+        <label for="link">
+          LinkedIn
+        </label>
+        <input name="job" id="job" type="text">
+        <input name="comp" id="comp" type="text">
+        <input name="link" id="link" type="text">
+
+      </div>
+      <div class="mid-form">
+        <label for="meet"> How did we meet?</label>
+        <label for="other"> Other (please specify)</label>
+        <select id="meet" name="meet">
+          <option value="none">-- Select Where We Meet--</option>
+          <option value="none">Job Fair</option>
+          <option value="none">Online Job Board</option>
+          <option value="none">LinkedIn</option>
+        </select>
+        <input id='other' name="'other" type="text">
+      </div>
+      <div class="msg-area">
+        <label for="msg">Message</label>
+        <textarea rows="8" id="msg" name="msg"></textarea>
+      </div>
+      <div class="submit-form">
+        <div class="mail-list">
+          <input type="checkbox" name="mail" id="mail">
+          <p>Add To Mailing List</p>
+        </div>
+        <div class="email-format">
+            <p>Choose an email format:</p>
+            <input name="format" type="radio" id="html">
+            <p>HTML</p>
+            <input name="format" type="radio" id="text">
+            <p>Text</p>
+
+        </div>
+        <button> Submit</button>
+      </div>
+    </form>
+  </main>
+
 </body>
+
 </html>

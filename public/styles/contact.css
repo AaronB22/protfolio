@@ -55,3 +55,29 @@ select {
     width: 80%;
 
 }
+
+.msg-area {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border: 1px lightgray solid;
+    border-radius: 5px;
+}
+.mail-list{
+    display: flex;
+    flex-direction: row;
+}
+.mail-list p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+.email-format{
+    display: flex;
+    flex-direction: row;
+}
+.email-format p{
+    margin-top: 10px;
+}

@@ -1,35 +1,57 @@
-html{
-    background-color: rgb(244,244,244);
+html {
+    background-color: rgb(244, 244, 244);
 }
-h1{
+
+h1 {
     text-align: center;
 }
 
-.topForm{
-    display:grid;
+.topForm {
+    display: grid;
     grid-template-columns: auto auto auto;
-    
+
 }
-main{
+
+main {
     width: 75%;
-    background-color:rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px
 }
-label{
+
+label {
     font-weight: 500;
     font-size: 1.5rem;
     margin-bottom: 5px;
     margin-top: 20px;
 }
-input{
+
+input {
     border: 1px lightgray solid;
     border-radius: 5px;
     height: 30px;
 }
-.topForm input{
+
+.topForm input {
     width: 75%;
+}
+
+.mid-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+select {
+    width: 90%;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+}
+
+#other {
+    width: 80%;
+
 }

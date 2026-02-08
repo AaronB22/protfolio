@@ -91,3 +91,7 @@ button{
     font-size: 1rem;
     width: 100px;
 }
+.err{
+    font-size: 16px;
+    color: darkred;
+}

@@ -18,10 +18,10 @@
           First Name <span class="err" id="ferr">First Name Is Required!</span>
         </label>
         <label for="lname">
-          Last Name <span class="err" id="ferr">Last Name Is Required!</span>
+          Last Name <span class="err" id="lerr">Last Name Is Required!</span>
         </label>
         <label for="email">
-          Email <span class="err" id="ferr">Email Is Required!</span>
+          Email <span class="err" id="emerr">Email Is Required!</span>
         </label>
         <input name="fname" id="fname" type="text">
         <input name="lname" id="lname" type="text">
@@ -33,7 +33,7 @@
           Company
         </label>
         <label for="link">
-          LinkedIn
+          LinkedIn <span class="err" id="lkerr">Link Must Start With "https://linkedin.com/in/"</span>
         </label>
         <input name="job" id="job" type="text">
         <input name="comp" id="comp" type="text">
@@ -41,7 +41,7 @@
 
       </div>
       <div class="mid-form">
-        <label for="meet"> How did we meet?</label>
+        <label for="meet"> How did we meet? <span class="err" id="merr">How We Meet Is Required!</span></label>
         <label for="other"> Other (please specify)</label>
         <select id="meet" name="meet">
           <option value="none">-- Select Where We Meet--</option>

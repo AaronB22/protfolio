@@ -7,12 +7,13 @@
   <title>Contact Aaron Bailey</title>
   <link rel="icon" href="./imgs/icon.png">
   <link rel="stylesheet" href="styles/contact.css">
+  <script src="js/contact.js" defer></script>
 </head>
 
 <body>
   <main>
     <h1>Contact Me!</h1>
-    <form>
+    <form id="contact-form">
       <div class="topForm">
         <label for="fname">
           First Name <span class="err" id="ferr">First Name Is Required!</span>
@@ -45,9 +46,9 @@
         <label for="other"> Other (please specify)</label>
         <select id="meet" name="meet">
           <option value="none">-- Select Where We Meet--</option>
-          <option value="none">Job Fair</option>
-          <option value="none">Online Job Board</option>
-          <option value="none">LinkedIn</option>
+          <option value="fair">Job Fair</option>
+          <option value="board">Online Job Board</option>
+          <option value="linkedin">LinkedIn</option>
         </select>
         <input id='other' name="'other" type="text">
       </div>
@@ -68,7 +69,7 @@
             <p>Text</p>
 
         </div>
-        <button> Submit</button>
+        <button type="submit"> Submit</button>
       </div>
     </form>
   </main>

@@ -1,7 +1,5 @@
-document.getElementById("contact-form").onsubmit = validate;
-
-function validate() {
-
+document.getElementById("contact-form").onsubmit = ()=> {
+    clearErrors()
     let isValid = true;
     let fname = document.getElementById("fname").value.trim();
     let lname = document.getElementById("lname").value.trim();
@@ -18,9 +16,9 @@ function validate() {
         isValid = false
         document.getElementById("ferr").style.display = "block"
     }
-    if (email && !email.includes("@")) {
+    if (email && (!email.includes("@") || !email.includes(".")) ) {
         isValid = false
-        document.getElementById("emerr").style.display = "block"
+        document.getElementById("eerr").style.display = "block"
     }
     if (linkedIn && !linkedIn.includes("https://linkedin.com/in/")) {
         isValid = false
@@ -36,4 +34,11 @@ function validate() {
     }
 
     return isValid;
+}
+
+function clearErrors(){
+    let error= document.getElementsByClassName("err");
+    for(let i=0; i<clearErrors.length;i++){
+        error[i].style.display=="none"
+    }
 }

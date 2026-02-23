@@ -32,7 +32,7 @@ document.getElementById("contact-form").onsubmit = ()=> {
                 isValid = false
         document.getElementById("emerr").style.display = "block"
     }
-
+    
     return isValid;
 }
 

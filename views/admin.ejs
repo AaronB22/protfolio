@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/icon.png">
+     <script src="//code.jquery.com/jquery-3.7.1.js"> </script>
+     <script src="//cdn.datatables.net/2.3.7/js/dataTables.js"></script>
+     <link rel="stylesheet" href="//cdn.datatables.net/2.3.7/css/dataTables.dataTables.css">
+    <title>Admin</title>
+</head>
+<body>
+        <table id="order-table" class="display">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Job</th>
+              <th>Company</th>
+              <th>How we meet</th>
+              <th>Message</th>
+              <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody>
+           <% contacts.forEach(contact=>{ %>
+            <td> Name: <%=contact.fname %> <%=contact.lname%></td>
+            <td> Email: <%=contact.email%></td>
+            <td>Job: <%=contact.job%></td>
+            <td>Company: <%=contact.comp%></td>
+            <% if(contact.link){ %>
+            <td> <%= contact.linkedin %> </td>
+            <% } %>
+            <td> How we meet: <%=contact.meet%></td>
+            <% if(contact.msg) { %>
+          <td> <%= contact.msg %></td>
+            <%}%>
+                <td>Timestamp: <%=contact.timestamp%></td>
+            <%}) %> 
+          </tbody>
+</body>
+  <script defer>
+    let table = new DataTable('#order-table')
+  </script>
+</html>

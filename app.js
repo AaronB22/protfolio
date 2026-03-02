@@ -34,7 +34,7 @@ app.post('/confirm', (req, res) => {
     res.render(`confirm`, {contact})
 })
 app.get('/admin', (req,res)=>{
-    res.send(contacts)
+    res.render('admin', {contacts})
 })
 app.listen(PORT, ()=>{
     console.log(`Listening on http://localhost:${PORT}`)

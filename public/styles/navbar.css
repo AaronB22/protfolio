@@ -1,0 +1,19 @@
+.navbar{
+    width: 75%;
+    background-color: #CCC7BF;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar a{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5rem;
+}
+
+@media screen and (width <750px) {
+    .navbar{
+        width: 100%;
+    }
+}

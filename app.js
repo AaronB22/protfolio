@@ -12,10 +12,10 @@ const contacts=[]
 
 
 app.get('/', (req, res) => {
-    res.sendFile(`${import.meta.dirname}/views/index.html`)
+    res.render(`index`)
 })
 app.get('/contact', (req,res)=>{
-    res.sendFile(`${import.meta.dirname}/views/contact.html`)
+    res.render('contact')
 })
 app.post('/confirm', (req, res) => {
     const contact={

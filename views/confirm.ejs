@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you!</title>
+      <link rel="icon" href="./imgs/icon.png">
+      <link rel="stylesheet" href="styles/confirm.css">
+</head>
+<body>
+    <div class="block">
+
+        <h1>Thank you for contacting me!</h1>
+        <div>
+            <p> Name: <%=contact.fname %> <%=contact.lname%></p>
+            <p> Email: <%=contact.email%></p>
+            <p>Job: <%=contact.job%></p>
+            <p>Company: <%=contact.comp%></p>
+            <% if(contact.link){ %>
+               <p> <%= contact.linkedin %> </p>
+           <% } %>
+            <p> How we meet: <%=contact.meet%></p>
+            <% if(contact.msg) { %>
+                <%= contact.msg %>   
+            <%}%>
+                <p>Timestamp: <%=contact.timestamp%></p>
+        </div>
+        <div class="btn-div">
+            <button> <a href="/contact">Back to Contact page</a></button>
+             <button><a href="/admin">See All contacts</a></button>
+        </div>
+    </div>
+
+</body>
+</html>
+        <!-- fname: req.body.fname,
+        lname: req.body.lname,
+        email: req.body.email,
+        job: req.body.job,
+        comp: req.body.comp,
+        link: req.body.link,
+        meet: req.body.meet,
+        msg: req.body.msg,
+        timestamp: new Date() -->

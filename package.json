@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AaronB22/protfolio#readme",
   "dependencies": {
+    "ejs": "^4.0.1",
     "express": "^5.2.1",
     "nodemon": "^3.1.11"
   }

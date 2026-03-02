@@ -2,7 +2,8 @@ import express from "express";
 
 const app = express();
 
-const PORT=3006;
+const PORT=3007;
+app.set("view engine", 'ejs');
 
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:true}))
@@ -25,10 +26,12 @@ app.post('/confirm', (req, res) => {
         comp: req.body.comp,
         link: req.body.link,
         meet: req.body.meet,
-        msg: req.body.msg
+        msg: req.body.msg,
+        timestamp: new Date()
     }
     contacts.push(contact)
-    res.sendFile(`${import.meta.dirname}/views/confirm.html`)
+    console.log(contact)
+    res.render(`confirm`, {contact})
 })
 app.get('/admin', (req,res)=>{
     res.send(contacts)

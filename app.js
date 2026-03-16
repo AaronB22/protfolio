@@ -32,12 +32,12 @@ const projects=[
         "desc":"Cloudforge allows user to store trading and gaming cards to a digital library! I help build the upload logic, the navbar, server side validtion, and database setup"
     },
     {
-        "name": "Cloudforge",
-        "tech": ["Node.js", "SQL", "EJS"],
-        "img": "./imgs/cloudforge.png",
-        "alt": "Website showing trading and gaming cards",
-        "github": "https://github.com/sabinMas/CloudForge",
-        "desc": "Cloudforge allows user to store trading and gaming cards to a digital library! I help build the upload logic, the navbar, server side validtion, and database setup"
+        "name": "Rover Lander",
+        "tech": ["C++", "Docker", "LibreSprite", "Butano"],
+        "img": "./imgs/roverlanding.png",
+        "alt": "A game showing a rover lander landing",
+        "github": "https://github.com/JamHudson/gr-space-microjam",
+        "desc": "A Gameboy Advance game where the player must landa rover in time! I worked on the gravity logic, the engine logic, the lander sprite, and the engine animation!"
     }
 ]
 

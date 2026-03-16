@@ -26,8 +26,18 @@ const projects=[
     {
         "name":"Cloudforge",
         "tech":["Node.js","SQL","EJS"],
-        "img":".img/cloudforge.png",
+        "img":"./imgs/cloudforge.png",
+        "alt":"Website showing trading and gaming cards",
+        "github":"https://github.com/sabinMas/CloudForge",
         "desc":"Cloudforge allows user to store trading and gaming cards to a digital library! I help build the upload logic, the navbar, server side validtion, and database setup"
+    },
+    {
+        "name": "Cloudforge",
+        "tech": ["Node.js", "SQL", "EJS"],
+        "img": "./imgs/cloudforge.png",
+        "alt": "Website showing trading and gaming cards",
+        "github": "https://github.com/sabinMas/CloudForge",
+        "desc": "Cloudforge allows user to store trading and gaming cards to a digital library! I help build the upload logic, the navbar, server side validtion, and database setup"
     }
 ]
 

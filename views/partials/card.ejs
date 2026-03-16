@@ -1,10 +1,15 @@
-<div>
+<head>
+     <link rel="stylesheet" href="styles/card.css">
+</head>
+<div class="card">
     <h2><%= data.name %></h2>
     <ul>
+        <h3> Technology I Used!</h3>
         <% data.tech.forEach(tech=>{ %>
             <li><%=tech%></li>
         <%}) %>
     </ul>
-    <img src="<%data.img%>">
+    <img src="<%=data.img%>" alt="<%=data.alt %>">
     <p><%=data.desc %></p>
+    <a href="<%= data.github%>">Github</a>
 </div>

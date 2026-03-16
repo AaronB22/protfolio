@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius:25px ;
+    width: 300px;
+    margin: 20px;
+}
+ul{
+    list-style: none;
+}

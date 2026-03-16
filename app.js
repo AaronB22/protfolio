@@ -1,6 +1,7 @@
 import express from "express";
 import mysql2 from 'mysql2';
 import dotenv from 'dotenv';
+import { validateForm } from "./validate.js";
 
 const app = express();
 
@@ -25,10 +26,16 @@ app.get('/', (req, res) => {
     res.render(`index`)
 })
 app.get('/contact', (req,res)=>{
-    res.render('contact')
+    res.render('contact', { errors: null })
 })
 app.post("/confirm", async (req, res) => {
     const contact = req.body;
+    const valid = validateForm(contact);
+    if (!valid.isValid) {
+        console.log(valid);
+        res.render('contact', { errors: valid.errors })
+        return;
+    }
 
     const params = [
         contact.fname,
@@ -47,6 +54,7 @@ app.post("/confirm", async (req, res) => {
     `;
 
     await pool.execute(sql, params);
+    
 
     res.render("confirm", { contact });
 });

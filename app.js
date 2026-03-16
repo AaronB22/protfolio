@@ -22,11 +22,23 @@ const pool = mysql2.createPool({
     port: process.env.DB_PORT
 }).promise();
 
+const projects=[
+    {
+        "name":"Cloudforge",
+        "tech":["Node.js","SQL","EJS"],
+        "img":".img/cloudforge.png",
+        "desc":"Cloudforge allows user to store trading and gaming cards to a digital library! I help build the upload logic, the navbar, server side validtion, and database setup"
+    }
+]
+
 app.get('/', (req, res) => {
     res.render(`index`)
 })
 app.get('/contact', (req,res)=>{
     res.render('contact', { errors: null })
+})
+app.get('/portfolio',(req,res)=>{
+    res.render("portfolio", {projects})
 })
 app.post("/confirm", async (req, res) => {
     const contact = req.body;

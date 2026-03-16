@@ -1,0 +1,10 @@
+<div>
+    <h2><%= data.name %></h2>
+    <ul>
+        <% data.tech.forEach(tech=>{ %>
+            <li><%=tech%></li>
+        <%}) %>
+    </ul>
+    <img src="<%data.img%>">
+    <p><%=data.desc %></p>
+</div>

@@ -20,7 +20,7 @@ document.getElementById("contact-form").onsubmit = ()=> {
         isValid = false
         document.getElementById("eerr").style.display = "block"
     }
-    if (linkedIn && !linkedIn.includes("https://linkedin.com/in/") || !linkedIn.includes("https://www.linkedin.com/in/")) {
+    if (linkedIn && (!linkedIn.includes("https://linkedin.com/in/") || !linkedIn.includes("https://www.linkedin.com/in/"))) {
         isValid = false
         document.getElementById("lkerr").style.display = "block"
     }

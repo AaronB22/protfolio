@@ -22,17 +22,26 @@ export function validateForm(data) {
     if (data.fname.trim() == "") {
         errors.push("First name is required.");
     }
-    if (data.lname.trim() == "") {
-        errors.push("Last name is required.");
-    }
     if (data.email && (!data.email.includes("@") || !data.email.includes("."))) {
         errors.push("Email must be valid");
     }
-    if (data.link && !data.link.includes("https://linkedin.com/in/") || !data.link.includes("https://www.linkedin.com/in/")) {
+    if (data.link && (!data.link.includes("https://linkedin.com/in/") || !data.link.includes("https://www.linkedin.com/in/"))) {
         errors.push("linkedIn link must be valid");
     }
-    if (data.meet.value === "none") {
-        errors.push("Please entered how wee meet");
+    const meet_options=[
+        "fair",
+        "board",
+        "linkedin"
+    ]
+    if (!meet_options.includes(data.meet)) {
+        errors.push("Insert valid meet option");
+    }
+    const format_options=[
+        'html',
+        'text'
+    ]
+    if(!format_options.includes(data.format)){
+        errors.push("Insert valid email format")
     }
 
 
